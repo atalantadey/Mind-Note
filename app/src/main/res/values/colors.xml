@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="red">#FFFF0000</color>
+    <color name="green">#FF00FF00</color>
+    <color name="blue">#FF0000FF</color>
+    <color name="cyan">#FF00FFFF</color>
+    <color name="magenta">#FFFF00FF</color>
+
+    <color name="Purple_Dark1">#0B001E</color>
+    <color name="Purple_DarkMainBG">#0B001E</color>
+    <color name="Purple">#5C469C</color>
+
+    <color name="colorNote2">#FDBE3B</color>
+    <color name="colorNote3">#FF4842</color>
+    <color name="colorNote4">#3A52Fc</color>
+    <color name="colorNote5">#000001</color>
+    <color name="colorDelete">#FF4842</color>
+
+
+
+
+
+</resources>

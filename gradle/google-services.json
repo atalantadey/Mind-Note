@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "240641496156",
+    "project_id": "mindnotee",
+    "storage_bucket": "mindnotee.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:240641496156:android:3111562955ec0792b4c299",
+        "android_client_info": {
+          "package_name": "com.mindnote"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBTFfTzgPE6w5kFXBltnPUJplBZzAESLJg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Mind Note</string>
+    <string name="email">Email</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="password">Password</string>
+    <string name="or_login_with">or login with</string>
+    <string name="already_have_an_acount_log_in">Already Have an Acount? Log In</string>
+    <string name="login">Login</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="don_t_have_an_account_sign_up">Don\'t have an account? Sign Up</string>
+    <string name="enter_your_email_address">Enter Your Email Address</string>
+    <string name="mind_note">Mind Note</string>
+</resources>
