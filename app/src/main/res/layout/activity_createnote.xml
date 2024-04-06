@@ -44,7 +44,6 @@
                 app:layout_constraintBottom_toBottomOf="@id/imageBack"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="@id/imageBack">
-
             </ImageView>
             <EditText
                 android:id="@+id/inputNoteTitle"
@@ -107,7 +106,6 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="@id/inputNoteSubtitle"
                 />
-
             <ImageView
                 android:id="@+id/imageNote"
                 android:layout_width="match_parent"
@@ -117,7 +115,27 @@
                 android:layout_marginEnd="@dimen/_12sdp"
                 android:adjustViewBounds="true"
                 android:visibility="gone"
-                app:layout_constraintTop_toBottomOf="@id/inputNoteSubtitle" />
+                app:layout_constraintTop_toBottomOf="@id/inputNoteSubtitle"
+                app:layout_constraintBottom_toTopOf="@id/inputNote"/>
+            <LinearLayout
+                android:id="@+id/ll_webUrlCreateNote"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_12sdp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                app:layout_constraintTop_toBottomOf="@id/imageNote">
+                <TextView
+                    android:id="@+id/tv_UrlCreateNote"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:autoLink="web"
+                    android:textSize="@dimen/_13sdp"
+                    />
+            </LinearLayout>
+
             <EditText
                 android:id="@+id/inputNote"
                 android:layout_width="match_parent"
@@ -134,9 +152,8 @@
                 android:textColorHint="#B367FF"
                 android:textSize="@dimen/_13sdp"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/inputNoteSubtitle"/>
+                app:layout_constraintTop_toBottomOf="@id/ll_webUrlCreateNote"/>
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
-
-
+    <include layout="@layout/layout_options"/>
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

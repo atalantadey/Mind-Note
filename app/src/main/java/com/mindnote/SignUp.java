@@ -64,5 +64,6 @@ public class SignUp extends AppCompatActivity {
             }
         });
         msignup_login.setOnClickListener(v -> startActivity(new Intent(SignUp.this, LoginActivity.class)));
+
     }
 }

@@ -11,12 +11,13 @@
     <color name="Purple_Dark1">#0B001E</color>
     <color name="Purple_DarkMainBG">#0B001E</color>
     <color name="Purple">#5C469C</color>
-
+    <color name="colorNote1">#1D0050</color>
     <color name="colorNote2">#FDBE3B</color>
-    <color name="colorNote3">#FF4842</color>
-    <color name="colorNote4">#3A52Fc</color>
-    <color name="colorNote5">#000001</color>
+    <color name="colorNote3">#b0f2c2</color>
+    <color name="colorNote4">#6c8dfa</color>
+    <color name="colorNote5">#ff8fab</color>
     <color name="colorDelete">#FF4842</color>
+
 
 
 

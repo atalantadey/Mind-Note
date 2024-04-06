@@ -44,7 +44,7 @@ dependencies {
     implementation("com.intuit.ssp:ssp-android:1.0.6")
     //rounded imageview
     implementation("com.makeramen:roundedimageview:2.3.0")
-
+    implementation ("com.github.bumptech.glide:glide:4.16.0")
 
     implementation(libs.appcompat)
     implementation(libs.material)
