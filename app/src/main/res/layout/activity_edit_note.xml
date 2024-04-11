@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Purple_DarkMainBG">
+
+  <ImageView
+      android:layout_width="@dimen/_30sdp"
+      android:layout_height="@dimen/_30sdp"
+      android:id="@+id/imageBack"
+      android:layout_marginStart="@dimen/_10sdp"
+      android:layout_marginTop="@dimen/_30sdp"
+      android:contentDescription="Go Back"
+      android:src="@drawable/ic_back"
+      app:tint="@color/white">
+  </ImageView>
+  <ImageView
+      android:layout_width="@dimen/_45sdp"
+      android:layout_height="@dimen/_45sdp"
+      android:id="@+id/imageSave"
+      android:layout_marginEnd="@dimen/_12sdp"
+      android:background="@drawable/bg_donebtn"
+      android:contentDescription="Save Note"
+      android:padding="@dimen/_4sdp"
+      android:layout_marginTop="30sp"
+      android:layout_alignParentEnd="true"
+      android:src="@drawable/ic_done">
+  </ImageView>
+  <androidx.cardview.widget.CardView
+      android:id="@+id/card_view"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="80dp"
+      android:layout_marginBottom="@dimen/_80sdp"
+      android:layout_marginStart="@dimen/_25sdp"
+      android:layout_marginEnd="@dimen/_25sdp"
+      app:cardCornerRadius="16dp"
+      app:cardElevation="10dp"
+      app:cardBackgroundColor="@color/Purple">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+      <!-- Note Title -->
+      <EditText
+          android:id="@+id/editTextNoteTitle"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="Title"
+          android:textColor="@color/white"
+          android:inputType="textCapSentences"
+          android:maxLines="1"
+          android:textSize="@dimen/_28sdp"
+          android:textStyle="bold"
+          android:gravity="center" />
+      <!-- Note Date -->
+      <TextView
+          android:id="@+id/editTextNoteDate"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="1dp"
+          android:text="Note Date"
+          android:textColor="#D9CDFF"
+          android:textSize="@dimen/_10sdp" />
+      <!-- Note Subtitle -->
+      <EditText
+          android:id="@+id/editTextNoteSubtitle"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="8dp"
+          android:text="@string/note_subtitle"
+          android:textColor="@color/white"
+          android:inputType="textCapSentences"
+          android:textSize="@dimen/_12sdp"
+          android:maxLines="1"/>
+      <!-- Note Image -->
+      <ImageView
+          android:id="@+id/imageViewNoteImage"
+          android:layout_width="match_parent"
+          android:layout_height="200dp"
+          android:layout_marginTop="8dp"
+          android:contentDescription="Note Image"
+          android:scaleType="centerCrop"
+          android:visibility="gone"/>
+      <!-- Note URL -->
+      <LinearLayout
+          android:id="@+id/ll_webUrlEditNote"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_margin="@dimen/_12sdp"
+          android:gravity="center_vertical"
+          android:orientation="horizontal"
+          android:visibility="gone"
+          app:layout_constraintTop_toBottomOf="@id/imageNote">
+        <TextView
+            android:id="@+id/editTextNoteUrl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Note URL"
+            android:textSize="@dimen/_12sdp"
+            android:textColor="#9A78FF"
+            android:autoLink="web" />
+      </LinearLayout>
+      <!-- Note Content -->
+      <EditText
+          android:id="@+id/editTextNoteContent"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="8dp"
+          android:importantForAutofill="no"
+          android:text="Note Content"
+          android:textColor="@color/white"
+          android:inputType="textMultiLine"
+          android:layout_marginBottom="@dimen/_10sdp"/>
+    </LinearLayout>
+  </androidx.cardview.widget.CardView>
+  <androidx.cardview.widget.CardView
+      android:id="@+id/card_view_options"
+      android:layout_width="match_parent"
+      android:layout_height="@dimen/_45sdp"
+      android:layout_alignParentBottom="true"
+      android:layout_margin="32dp"
+      android:background="@color/Purple_DarkMainBG"
+      app:cardCornerRadius="8dp"
+      app:cardElevation="4dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp">
+      <!-- Bullets Button -->
+      <ImageView
+          android:id="@+id/btnBullets"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:src="@drawable/ic_bullet"
+          android:contentDescription="@string/bullets_button"
+          android:layout_weight="1"/>
+      <!-- Checkboxes Button -->
+      <ImageView
+          android:id="@+id/btnCheckboxes"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:src="@drawable/ic_checkbox"
+          android:layout_marginStart="16dp"
+          android:contentDescription="@string/checkboxes_button"
+          android:layout_weight="1"/>
+      <!-- Text Style Button -->
+      <ImageView
+          android:id="@+id/btnColor"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:src="@drawable/btncolor"
+          android:layout_marginStart="16dp"
+          android:contentDescription="@string/text_style_button"
+          android:layout_weight="1"/>
+      <!-- Underline Text Button -->
+      <ImageView
+          android:id="@+id/btnAddImage"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:src="@drawable/baseline_image_24"
+          android:layout_marginStart="16dp"
+          android:layout_weight="1"
+          app:tint="@color/Purple" />
+      <ImageView
+          android:id="@+id/btnAddUrl"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:src="@drawable/url"
+          android:layout_marginStart="16dp"
+          android:layout_weight="1"
+          app:tint="@color/Purple" />
+      <ImageView
+          android:id="@+id/btnDel"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:src="@drawable/baseline_delete_forever_24"
+          android:layout_marginStart="16dp"
+          android:layout_weight="1"
+          app:tint="@color/red" />
+
+    </LinearLayout>
+  </androidx.cardview.widget.CardView>
+</RelativeLayout>

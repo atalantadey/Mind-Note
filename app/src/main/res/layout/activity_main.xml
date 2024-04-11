@@ -9,13 +9,15 @@
     tools:context=".MainActivity"
     android:background="@color/Purple_DarkMainBG">
 
+
     <TextView
         android:id="@+id/textMindNote"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/mind_note"
         android:textColor="@color/white"
-        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:layout_marginTop="35dp"
         android:layout_marginStart="40dp"
         android:textSize="35sp"
         android:fontFamily="sans-serif"
@@ -123,7 +125,21 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@id/layoutQuickActions"
         app:tint="@color/black"
-
         />
+    <!--
+     <com.google.android.material.navigation.NavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/nav_drawer"
+        android:layout_gravity="start"
+        app:itemIconTint="@color/Purple"
+        app:itemTextColor="@color/Purple"
+        app:headerLayout="@layout/nav_header"
+        app:menu="@menu/main_menu"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:ignore="MissingConstraints" />
+    -->
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

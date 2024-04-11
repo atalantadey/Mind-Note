@@ -13,4 +13,11 @@
     <string name="options">OPTIONS</string>
     <string name="title">Title</string>
     <string name="cancel">Cancel</string>
+    <string name="bullets_button" />
+    <string name="checkboxes_button" />
+    <string name="text_style_button" />
+    <string name="underline_text_button" />
+    <string name="note_subtitle">Note Subtitle</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
 </resources>
